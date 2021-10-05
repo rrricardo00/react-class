@@ -1,8 +1,13 @@
-import './App.css';
 
 function App() {
+
+const estilo = {
+  color: "red",
+  fontSize: "2rem",
+}
+
   return (
-   <div>
+   <div style={estilo}>
      Início aqui começa
    </div>
   );
