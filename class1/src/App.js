@@ -21,6 +21,7 @@ const mario = {
   ativa: false,
 };
 
+
 function App() {
   
   const dados = luana;
