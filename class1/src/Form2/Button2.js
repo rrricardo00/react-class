@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Button2 = () => {
+const Button2 = (props) => {
     return (
         <div>
-            <button>Enviar</button>
+           {
+           props.item[0] === 'item1' ? <button>{props.item[0]}</button> : <button>{props.item[1]}</button>
+           }
         </div>
     )
 }
