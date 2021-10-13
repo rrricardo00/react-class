@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form2 from './Form2/Form2';
+import App2 from './Produtos exercicio/App2';
+// import Home from './Produtos exercicio/Home';
+// import Form2 from './Form2/Form2';
 // import Eventos from './Eventos';
 // import App from './App';
 // import Arrais from './Arrais';
@@ -10,7 +12,7 @@ import Form2 from './Form2/Form2';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Form2/>
+    <App2/>
   </React.StrictMode>,
   document.getElementById('root')
 );
