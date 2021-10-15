@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Effects from './Effects';
+// import EstadoExercicio from './EstadoExercicio';
 // import Estado from './Estado/Estado';
 // import Estado2 from './Estado2';
-import ModoEstrito from './ModoEstrito';
+// import ModoEstrito from './ModoEstrito';
 // import App2 from './Produtos exercicio/App2';
 // import Home from './Produtos exercicio/Home';
 // import Form2 from './Form2/Form2';
@@ -15,7 +17,7 @@ import ModoEstrito from './ModoEstrito';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ModoEstrito/>
+    <Effects/>
   </React.StrictMode>,
   document.getElementById('root')
 );
