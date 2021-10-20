@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Effects from './Effects';
+import Effectindex from './EffectExercicio/Effectindex';
+// import Effects from './Effects';
 // import EstadoExercicio from './EstadoExercicio';
 // import Estado from './Estado/Estado';
 // import Estado2 from './Estado2';
@@ -14,10 +15,9 @@ import Effects from './Effects';
 // import Componentes from './Componentes'
 // import Propriedads from './Propriedads';
 
-
 ReactDOM.render(
   <React.StrictMode>
-    <Effects/>
+    <Effectindex/>
   </React.StrictMode>,
   document.getElementById('root')
 );
