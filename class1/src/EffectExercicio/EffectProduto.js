@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EffectProduto = ({ dados }) => {
+const EffectProduto = ({ dados, localNome, localpreco }) => {
 
     React.useEffect(() => {
         localStorage.setItem('nome', dados.nome)
@@ -11,15 +11,11 @@ const EffectProduto = ({ dados }) => {
         }
     }, [dados])
 
-
-   
-
     return (
         <div>
 
             <h1>{dados.nome}</h1>
             <h3>R$ {dados.preco}</h3>
-
         </div>
     )
 }
