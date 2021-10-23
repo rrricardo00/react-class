@@ -1,10 +1,13 @@
 import React from 'react'
+import userContextjs from './userContextjs'
+import UsercontextProduto from './UsercontextProduto'
 
 const Contexto = () => {
+    console.log(userContextjs)
     return (
-        <div>
-            use Contexto
-        </div>
+        <userContextjs.Provider value={{nome: "Ricardo"}}>
+            <UsercontextProduto/>
+        </userContextjs.Provider>
     )
 }
 
