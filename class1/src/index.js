@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppContext from './ExercicioContext/AppContext';
 // import Contexto from './Contexto';
-import Estado from './State/Estado';
+// import Estado from './State/Estado';
 // import MemoCallBack from './MemoCallBack';
 // import Effectindex from './EffectExercicio/Effectindex';
 // import Ref from './Ref';
@@ -21,7 +22,7 @@ import Estado from './State/Estado';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Estado/>
+    <AppContext/>
   </React.StrictMode>,
   document.getElementById('root')
 );
