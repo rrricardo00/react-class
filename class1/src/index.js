@@ -21,9 +21,9 @@ import AppContext from './ExercicioContext/AppContext';
 // import Propriedads from './Propriedads';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <AppContext/>
-  </React.StrictMode>,
+  </>,
   document.getElementById('root')
 );
 
