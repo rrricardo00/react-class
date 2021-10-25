@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppContext from './ExercicioContext/AppContext';
+import CustomHook from './CustomHooks/CustomHook';
+// import AppContext from './ExercicioContext/AppContext';
 // import Contexto from './Contexto';
 // import Estado from './State/Estado';
 // import MemoCallBack from './MemoCallBack';
@@ -22,7 +23,7 @@ import AppContext from './ExercicioContext/AppContext';
 
 ReactDOM.render(
   <>
-    <AppContext/>
+    <CustomHook/>
   </>,
   document.getElementById('root')
 );
