@@ -6,7 +6,7 @@ import UseLocalStorage from './UseLocalStorage'
 const CustomHook = () => {
 
     const [produto, setProduto] = UseLocalStorage('produto', '')
-    const {request, data} = useFetch()
+    const {request, data, loading} = useFetch()
 
     const handleClick = ({target}) => setProduto(target.innerText)
 
@@ -14,12 +14,11 @@ const CustomHook = () => {
         request('https://pokeapi.co/api/v2/pokemon/pikachu')
     }, [])
 
-    if (data === null) return null
-
-    console.log(data.moves[0].move.name)
-
+    if(loading) return <p>Carregando</p>
+    if (data)
     return (
         <div>
+
             <p>Produto preferido: {produto}</p>
             <button onClick={handleClick}>Notebook 2</button>
             <button onClick={handleClick}>Smartphone 2</button>
@@ -28,6 +27,7 @@ const CustomHook = () => {
             </ul>
         </div>
     )
+    else return null
 }
 
 export default CustomHook
