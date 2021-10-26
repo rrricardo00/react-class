@@ -6,11 +6,21 @@ const useFetch = () => {
     const [loading, setLoading] = React.useState(null)
 
     const request = async (url, options) => {
-        setLoading(true)
-        const response = await fetch(url, options)
-        const json = await response.json()
-        setData(json)
-        setLoading(false)
+
+        try {
+            setErro(null)
+            setLoading(true)
+            const response = await fetch(url, options)
+            const json = await response.json()
+            setData(json)
+
+        } catch (error) {
+            setErro('error')
+        } finally {
+            setLoading(false)
+            return { response, json }
+        }
+
     }
 
     return { data, erro, loading, request }

@@ -6,15 +6,16 @@ import UseLocalStorage from './UseLocalStorage'
 const CustomHook = () => {
 
     const [produto, setProduto] = UseLocalStorage('produto', '')
-    const {request, data, loading} = useFetch()
+    const {request, data, loading, erro} = useFetch()
 
     const handleClick = ({target}) => setProduto(target.innerText)
 
     React.useEffect(() =>{
-        request('https://pokeapi.co/api/v2/pokemon/pikachu')
+       const {response, json} =  request('https://pokeapi.co/api/v2/pokemon/pikachu')
     }, [])
 
-    if(loading) return <p>Carregando</p>
+    if(erro) return <p>{erro}</p>
+    if(loading) return <p>Carregando...</p>
     if (data)
     return (
         <div>
