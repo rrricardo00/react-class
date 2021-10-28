@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CustomHook from './CustomHooks/CustomHook';
+// import CustomHook from './CustomHooks/CustomHook';
+import FormAdpp from './Formulario/FormAdpp';
 // import AppContext from './ExercicioContext/AppContext';
 // import Contexto from './Contexto';
 // import Estado from './State/Estado';
@@ -23,7 +24,7 @@ import CustomHook from './CustomHooks/CustomHook';
 
 ReactDOM.render(
   <>
-    <CustomHook/>
+    <FormAdpp/>
   </>,
   document.getElementById('root')
 );
