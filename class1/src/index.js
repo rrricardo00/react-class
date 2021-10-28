@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import CustomHook from './CustomHooks/CustomHook';
-import FormAdpp from './Formulario/FormAdpp';
+// import FormAdpp from './Formulario/FormAdpp';
+import FormAppExercicio from './Formulario/FormAppExercicio';
 // import AppContext from './ExercicioContext/AppContext';
 // import Contexto from './Contexto';
 // import Estado from './State/Estado';
@@ -24,7 +25,7 @@ import FormAdpp from './Formulario/FormAdpp';
 
 ReactDOM.render(
   <>
-    <FormAdpp/>
+    <FormAppExercicio/>
   </>,
   document.getElementById('root')
 );
