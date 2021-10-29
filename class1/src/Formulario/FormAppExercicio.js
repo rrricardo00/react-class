@@ -27,7 +27,7 @@ const FormAppExercicio = () => {
                 <input id="nome" type="text" value={form.nome}/>
                 <button>Enviar</button>
             </form>
-
+            
         </div>
     )
 }
