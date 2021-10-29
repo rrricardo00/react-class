@@ -16,15 +16,18 @@ const FormAppExercicio = () => {
 
     const [response, setResponse] = React.useState(null)
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = (e) => {
         e.preventDefault();
-        
-
     }
 
     return (
         <div>
-            form app exercicio
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="nome">Nome</label>
+                <input id="nome" type="text" value={form.nome}/>
+                <button>Enviar</button>
+            </form>
+
         </div>
     )
 }
