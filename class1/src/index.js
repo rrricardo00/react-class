@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Select from './Formulario/Select';
 // import CustomHook from './CustomHooks/CustomHook';
 // import FormAdpp from './Formulario/FormAdpp';
-import FormAppExercicio from './Formulario/FormAppExercicio';
+// import FormAppExercicio from './Formulario/FormAppExercicio';
+// import TextArea from './Formulario/TextArea';
 // import AppContext from './ExercicioContext/AppContext';
 // import Contexto from './Contexto';
 // import Estado from './State/Estado';
@@ -25,7 +27,7 @@ import FormAppExercicio from './Formulario/FormAppExercicio';
 
 ReactDOM.render(
   <>
-    <FormAppExercicio/>
+    <Select/>
   </>,
   document.getElementById('root')
 );
