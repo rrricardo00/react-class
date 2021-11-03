@@ -8,7 +8,9 @@ const Radio = () => {
 
     return (
         <div>
-            <input type="radio" value="notebook" onChange={handleChange} checked={valor === 'notebook'} />
+            <label><input type="radio" value="notebook" onChange={handleChange} checked={valor === 'notebook'} /> Notebook</label><br/>
+            <label><input type="radio" value="smartphone" onChange={handleChange} checked={valor === 'smartphone'} /> Smartphone</label>
+            {valor}
         </div>
     )
 }

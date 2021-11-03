@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Radio from './Formulario/Radio';
+import CheckBox from './Formulario/CheckBox';
+// import Radio from './Formulario/Radio';
 // import Select from './Formulario/Select';
 // import CustomHook from './CustomHooks/CustomHook';
 // import FormAdpp from './Formulario/FormAdpp';
@@ -28,7 +29,7 @@ import Radio from './Formulario/Radio';
 
 ReactDOM.render(
   <>
-    <Radio/>
+    <CheckBox/>
   </>,
   document.getElementById('root')
 );
