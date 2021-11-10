@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CheckBox from './Formulario/CheckBox';
+import FormComponentIndex from './FomComponents/FormComponentIndex';
+// import CheckBox from './Formulario/CheckBox';
+// import ExercicioForm from './Formulario/ExercicioForm';
 // import Radio from './Formulario/Radio';
 // import Select from './Formulario/Select';
 // import CustomHook from './CustomHooks/CustomHook';
@@ -29,7 +31,7 @@ import CheckBox from './Formulario/CheckBox';
 
 ReactDOM.render(
   <>
-    <CheckBox/>
+    <FormComponentIndex/>
   </>,
   document.getElementById('root')
 );
