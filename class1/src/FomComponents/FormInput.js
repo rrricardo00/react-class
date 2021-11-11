@@ -1,10 +1,10 @@
 import React from 'react'
 
-const FormInput = () => {
+const FormInput = ({label, nameInput, setValue, ...props}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <div><label>{label}<br/><input name={nameInput} type="text" onChange={({target}) => setValue(target.value)} {...props} /></label></div>
+        </>
     )
 }
 
