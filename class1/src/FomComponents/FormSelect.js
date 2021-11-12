@@ -1,10 +1,20 @@
 import React from 'react'
 
-const FormSelect = () => {
+const FormSelect = ({options, select, setSelect}) => {
+
+    const [desativar, setDesativar] = React.useState(false)
+
+    const funcDesativar = () => setDesativar(true)
+
     return (
         <div>
-            <select>
-                <option value="">Selecione</option>
+            <select onChange={funcDesativar}>
+                <option value="" disabled={desativar}>Escolha uma opção</option>
+                {options.map((item) =>{
+                    return(
+                    <option onChange={({target}) => setSelect(target.value)} key={item} value={select}>{item}</option>
+                    )
+                })}
             </select>
         </div>
     )
