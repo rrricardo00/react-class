@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FormComponentIndex from './FomComponents/FormComponentIndex';
+import FormValidacao from './FomComponents/FormValidacao';
 // import CheckBox from './Formulario/CheckBox';
 // import ExercicioForm from './Formulario/ExercicioForm';
 // import Radio from './Formulario/Radio';
@@ -31,7 +32,7 @@ import FormComponentIndex from './FomComponents/FormComponentIndex';
 
 ReactDOM.render(
   <>
-    <FormComponentIndex/>
+    <FormValidacao/>
   </>,
   document.getElementById('root')
 );

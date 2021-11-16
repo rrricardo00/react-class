@@ -1,9 +1,15 @@
 import React from 'react'
 
-const FormRadio = ({...props}) => {
+const FormRadio = ({options, setValue, value, ...props}) => {
+
+    const atualValor = ({target}) => setValue(target.value)
+
     return (
         <>
-            <label><input {...props} type="radio" /> Radio 1</label>
+            {options.map((e) => {
+                return <label key={e}><input {...props} value={e} onChange={atualValor} checked={value === e}  type="radio" /> {e}</label>
+            })}
+            
         </>
     )
 }
