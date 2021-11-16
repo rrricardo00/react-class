@@ -1,5 +1,6 @@
 import React from 'react'
 import FormInput from './FormInput'
+import FormRadio from './FormRadio'
 import FormSelect from './FormSelect'
 
 const FormComponentIndex = () => {
@@ -15,7 +16,7 @@ const FormComponentIndex = () => {
                 <FormSelect value={selectValue} setValue={setselectValue}  options={['smartphone', 'tablet', 'pc']}/>
                 <FormInput label="Nome" nameInput="nome" value={nome} setValue={setNome} required />
                 <FormInput label="Email" nameInput="email" value={email} setValue={setEmail} />
-               
+                <FormRadio name="valorRadio" />
                 <button type="submit">Submit</button>
       
             </form>
