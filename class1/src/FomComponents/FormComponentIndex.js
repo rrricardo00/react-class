@@ -15,9 +15,7 @@ const FormComponentIndex = () => {
                 <FormSelect value={select} setValue={setSelect} options={['smartphone', 'tablet', 'pc']}/>
                 <FormInput label="Nome" nameInput="nome" value={nome} setValue={setNome} required />
                 <FormInput label="Email" nameInput="email" value={email} setValue={setEmail} />
-               
                 <button type="submit">Submit</button>
-                {select}
             </form>
         </div>
     )
