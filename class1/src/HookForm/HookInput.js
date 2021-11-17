@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FormInput = ({label, nameInput, onChange, ...props}) => {
+const HookInput = ({label, nameInput, onChange, ...props}) => {
     return (
         <>
             <div><label>{label}<br/><input name={nameInput}  onChange={onChange} {...props} /></label></div>
@@ -8,4 +8,4 @@ const FormInput = ({label, nameInput, onChange, ...props}) => {
     )
 }
 
-export default FormInput
+export default HookInput
