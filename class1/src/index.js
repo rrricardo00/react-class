@@ -1,7 +1,7 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 // import FormComponentIndex from './FomComponents/FormComponentIndex';
-import FormValidacao from './FomComponents/FormValidacao';
+// import FormValidacao from './FomComponents/FormValidacao';
+import HookFormApp from './HookForm/HookFormApp';
 // import CheckBox from './Formulario/CheckBox';
 // import ExercicioForm from './Formulario/ExercicioForm';
 // import Radio from './Formulario/Radio';
@@ -32,8 +32,9 @@ import FormValidacao from './FomComponents/FormValidacao';
 
 ReactDOM.render(
   <>
-    <FormValidacao/>
+    <HookFormApp/>
   </>,
+  
   document.getElementById('root')
 );
 
