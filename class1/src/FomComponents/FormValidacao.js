@@ -19,9 +19,7 @@ const FormValidacao = () => {
 
     return (
         <form>
-          
             <FormInput onBlur={handleBlur} label="CEP" nameInput="cep" type="text" value={nome} setValue={setNome} placeholder="00000-000"/>
-            
         </form>
        
     )
