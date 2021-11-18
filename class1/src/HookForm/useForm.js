@@ -14,13 +14,14 @@ const types = {
 const useForm = (type) => {
 
     const [value, setValue] = React.useState('')
-    const [error, setError] = React.useState('')
+    const [error, setError] = React.useState(null)
 
     const validate = (value) => {
+        if (type === false) return true
         if (value.length === 0) {
             setError('Preencha um valor')
             return false
-        } else if (!types[type].regex.test(value)) {
+        } else if (types[type] && !types[type].regex.test(value)) {
             setError(types[type].message)
             return false
         } else {
@@ -39,7 +40,8 @@ const useForm = (type) => {
         setValue,
         error,
         onChange,
-        onBlur: () => validate(value)
+        onBlur: () => validate(value),
+        validate: () => validate(value)
     }
 
 }
