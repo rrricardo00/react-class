@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom';
+import DesafioForm from './DesafioForm/DesafioForm';
 // import FormComponentIndex from './FomComponents/FormComponentIndex';
 // import FormValidacao from './FomComponents/FormValidacao';
-import HookFormApp from './HookForm/HookFormApp';
+// import HookFormApp from './HookForm/HookFormApp';
 // import CheckBox from './Formulario/CheckBox';
 // import ExercicioForm from './Formulario/ExercicioForm';
 // import Radio from './Formulario/Radio';
@@ -32,7 +33,7 @@ import HookFormApp from './HookForm/HookFormApp';
 
 ReactDOM.render(
   <>
-    <HookFormApp/>
+    <DesafioForm/>
   </>,
   
   document.getElementById('root')
